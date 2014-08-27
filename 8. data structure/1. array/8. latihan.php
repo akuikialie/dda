@@ -1,23 +1,39 @@
 <?php
 
 $kota = array(
-	1 => 'Jakarta',
-	2 => 'Bogor',
-	3 => 'Depok',
-	4 => 'Tangerang',
-	5 => 'Bekasi',
-	6 => 'Bandung',
-	7 => 'Sukabumi',
+    1 => 'Jakarta',
+    2 => 'Bogor',
+    3 => 'Depok',
+    4 => 'Tangerang',
+    5 => 'Bekasi',
+    6 => 'Bandung',
+    7 => 'Sukabumi',
 );
 
 $kota2 = array(
-	'Jakarta',
-	'Tangerang',
-	'Sukabumi',
+    'Jakarta',
+    'Tangerang',
+    'Sukabumi',
 );
 
 function ambil_kota3($kota, $kota2)
 {
+    $out = array();
+
+    foreach ($kota as $key => $value) {
+        $hitungSama = 0;
+        foreach ($kota2 as $v) {
+            if ($v === $value) {
+                if ($v === $value) {
+                    ++$hitungSama;
+                }
+            }
+        }
+        if ($hitungSama == 0) {
+            $out[$key] = $value;
+        }
+    }
+    return $out;
 }
 
 
