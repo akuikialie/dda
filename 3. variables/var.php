@@ -1,0 +1,3 @@
+<?php
+
+$lokasi = 'yogyakarta';
