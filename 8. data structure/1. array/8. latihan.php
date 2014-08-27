@@ -24,9 +24,8 @@ function ambil_kota3($kota, $kota2)
         $hitungSama = 0;
         foreach ($kota2 as $v) {
             if ($v === $value) {
-                if ($v === $value) {
+//                unset($kota[$key]);
                     ++$hitungSama;
-                }
             }
         }
         if ($hitungSama == 0) {
@@ -34,8 +33,8 @@ function ambil_kota3($kota, $kota2)
         }
     }
     return $out;
+//    return $kota;
 }
-
 
 // kota 3 berisi kota yang tidak terdapat di kota2
 // array(3) {
