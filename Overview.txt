@@ -27,18 +27,18 @@
     - type
         * pengenalan tipe data
         * boolean
-        - integer
-        - string
-        - float
+        * integer
+        * string
+        * float
 
-    - variables
-    - constants
-    - expressions
-    - operators
-    - control structures
-    - http://www.php.net/manual/en/langref.php
+    * variables
+    * constants
+    * expressions
+    * operators
+    * control structures
+    * http://www.php.net/manual/en/langref.php
 
-- Functions
+* Functions
 
 - Data Structure
     - array
