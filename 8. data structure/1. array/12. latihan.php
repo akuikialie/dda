@@ -16,7 +16,7 @@ function tampilkan($data)
             echo "*";
 	}
 	echo "<br>";
-    }
+   }
 }
 
 /*

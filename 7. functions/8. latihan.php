@@ -5,6 +5,15 @@ var_dump($kalimat);
 
 function dda_filter($x)
 {
+    $out = "";
+    $out = substr($x, 1, 41);
+    $out .= substr($x, 44, 29);
+    $out .= substr($x, 74, 42);
+    $out .= substr($x, 117, 7);
+    $out .= substr($x, 125, 2);
+    $out .= substr($x, 128, 1);
+    $out .= substr($x, 130, 4);
+    return strtolower($out);
 }
 
 // klien saya mulai disidang sejak juli 2013 kata kuasa hukum noesoediono rusdianto saat berbincang dengan detikcom sabtu 2382014
