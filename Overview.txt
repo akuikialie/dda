@@ -1,0 +1,88 @@
+- Pengenalan / Introduction
+    - Bahasa pemrograman
+    - Web : browser, server
+    - HTML
+    - Server side processing / dynamic web
+
+- Logic
+    - control structure
+
+- Basic Programming
+    * basic syntax
+        * php tags: <?php <? <?=
+        * escaping from html
+        * echo & print
+            * integer literal
+            * string literal
+            * single quoted string
+        * white space
+        * statement & instruction separation
+        * variables assignment
+        * grammars:
+            * single line comment
+            * delimited comment
+
+        * function call
+        * require, include
+    - type
+        * pengenalan tipe data
+        * boolean
+        - integer
+        - string
+        - float
+
+    - variables
+    - constants
+    - expressions
+    - operators
+    - control structures
+    - http://www.php.net/manual/en/langref.php
+
+- Functions
+
+- Data Structure
+    - array
+    - hash table
+    - tree
+    - graph
+    - object
+
+- Algorithms
+
+- OOP
+    - basic OOP
+    - advanced OOP
+    - namespaces
+    - exceptions
+
+- function references:
+    - string
+    - array
+    - date time
+
+- security
+
+- common apps:
+    - html
+    - handling form submit
+    - handling file upload
+    - session
+
+
+- OOD
+- Design Pattern
+
+- Persistence
+- DBMS
+- DBAL & ORM
+
+- Git
+- Github
+
+- API
+- Basic e-commerce Platform
+
+- Linux
+- Automated Testing
+- Composer
+- PHP Framework
