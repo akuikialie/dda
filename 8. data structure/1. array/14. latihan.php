@@ -7,6 +7,7 @@ $data = array(
 	2 => 9,
 	3 => 14,
 	4 => 6,
+	5 => 7,
 );
 
 function tampilkan($data)
