@@ -14,6 +14,13 @@ $data = array(
 // hitung angka paling tinggi
 function get_max($array)
 {
+    $max = 0;
+    foreach ($array as $v) {
+        if($v > $max) {
+	    $max = $v;
+	}
+    }
+    return $max;
 }
 
 // 50
