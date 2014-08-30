@@ -22,17 +22,17 @@ class Air {
 
     public function setAsal($asal)
     {
-        $this->asal;
+        $this->asal = $asal;
     }
 
     public function setBanyak($banyak)
     {
-        $this->banyak;
+        $this->banyak = $banyak;
     }
 
     public function setTempat($tempat)
     {
-        $this->tempat;
+        $this->tempat = $tempat;
     }
 
 }
