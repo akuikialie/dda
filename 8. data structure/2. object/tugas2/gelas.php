@@ -5,3 +5,4 @@ class Gelas {
     
 }
 
+$g = new \Gelas();
