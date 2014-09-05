@@ -1,29 +1,52 @@
 <?php
 
 class Kompor {
-
-    public $merk;
-    public $warna;
-    public $kotor;
-    public $sedangDiPakai;
-    public $sedangDiCuci;
-
-    public function diPakai()
-    {
-        echo "Sedang Di Pakai";
-        $this->sedangDiPakai = "ya";
+   
+    private $sedangMenyala;
+    private $sedangKotor;
+    
+    public function nyalakan() {
+	if(!$this->sedangKotor) {
+	    if(!$this->sedangMenyala) {
+	        echo "Kompor menyala<br>";
+	        $this->sedangMenyala = true;
+	    } else {
+	        echo "Kompor sudah menyala<br>";
+	    }
+	} else {
+	    echo "Kompor sedang kotor. Belum menyala<br>";
+	}
+    }
+ 
+    public function pakai() {
+	if($this->sedangMenyala) {
+	    echo "Kompor bisa dipakai<br>";
+	} else {
+	    echo "Kompor Belum menyala<br>";
+	}
+    } 
+    
+    public function matikan() {
+	if($this->sedangMenyala) {
+    	    echo "Kompor di matikan<br>";
+	    $this->sedangKotor = true;
+	} else {
+	    echo "Kompor sudah tidak menyala<br>";
+	}
     }
 
-    public function diCuci()
-    {
-        echo "Sedang Di Cuci";
-        $this->sedangDiCuci = "ya";
+    public function bersihkan() {
+	if($this->sedangKotor) {
+	    echo "Bersikan Kompor dulu<br>";
+	} else {
+	    echo "Sudah Bersih Kompornya<br>";
+	}
     }
-
-    public function cekKeadaan()
-    {
-        $out = array($this->sedangDiCuci, $this->sedangDiPakai);
-        return $out;
-    }
-
 }
+
+$k = new Kompor();
+$k->nyalakan();
+$k->pakai();
+$k->matikan();
+//$k->bersihkan();
+$k->nyalakan();
