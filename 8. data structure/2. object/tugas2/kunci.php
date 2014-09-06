@@ -1,6 +1,6 @@
 <?php
 
-class kunci {
+class Kunci {
 
     public $adaKunci;
     private $apakahPintuBisaTerbuka;
@@ -33,7 +33,7 @@ class kunci {
 
 }
 
-$k = new kunci();
+$k = new Kunci();
 $k->adaKunci = 3;
 $k->cobaBuka();
 $k->cobaBuka();
