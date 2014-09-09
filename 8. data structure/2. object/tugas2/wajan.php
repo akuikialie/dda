@@ -13,10 +13,23 @@ class Wajan {
     }
 
     public function pakaiMasak() {
-    
+        if ($this->sedangKotor) {
+	    echo "Mohon wajan dicuci dulu, <br>";
+	} else {
+	    echo "Wajan dipakai<br>";
+            $this->sedangKotor = true;
+        }
     }
 
-
+    public function cuci() {
+        if ($this->sedangKotor) {
+	    echo "Wajan dicuci<br>";
+            $this->sedangKotor = false;
+	} else {
+	    echo "Wajan sudah bersih<br>";
+        }
+        
+    }
 }
 
 $w = new Wajan();
