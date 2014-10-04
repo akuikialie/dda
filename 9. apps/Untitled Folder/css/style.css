@@ -1,0 +1,149 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+#main-nav {
+	height: 36px;
+	background: #222;
+}
+
+#main-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#main-nav li {
+	list-style: none;
+	float: left;
+	padding: 10px;
+}
+
+#main-nav li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#main-nav li a:hover {
+	color: #FF0;
+}
+
+#main-nav li a:active {
+	color: #0FF;
+}
+
+.container {
+	padding: 1em;
+}
+
+.product {
+	padding: 0 1em 1em;
+	margin: 1em;
+	float: left;
+	border: 1px solid #AAB;
+	border-radius: 4px;
+}
+
+.product .product-title a {
+	text-decoration: none;
+	font-size: 150%;
+	color: #14E;
+}
+
+.product .product-title a:hover, .product .product-title a:active {
+	color: #3AF;
+}
+
+.product .product-price {
+	color: #E21;
+	font-weight: bold;
+	font-size: 120%;
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
+.product .btn-beli {
+	display: inline-block;
+	padding: 0.5em 1.5em;
+	background: #22E033;
+	border: 1px solid #11D022;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 4px;
+	float: right;
+	text-shadow: 1px 1px 0 rgba(0, 50, 0, 0.2);
+}
+
+.product .btn-beli:hover, .product .btn-beli:active {
+	background: #11D022;
+}
+
+.gridview {
+	border: 1px solid #999;
+	border-collapse: collapse;
+}
+
+.gridview th {
+	font-size: 120%;
+	background: #EEF;
+	padding: 0.75em;
+	border: 1px solid #999;
+}
+
+.gridview td {
+	border: 1px solid #999;
+	vertical-align: top;
+	padding: 8px;
+}
+
+.gridview .col-index {
+	text-align: center;
+	width: 40px;
+}
+
+.btn {
+	display: inline-block;
+	background: #26E;
+	border: 1px solid #15D;
+	padding: 0.5em 1em;
+	color: #FFF;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+.btn:hover, .btn:active {
+	background: #14C;
+}
+
+.input-form {
+	margin-top: 2em;
+}
+
+.input-form fieldset {
+	padding: 2em;
+}
+
+.input-form fieldset legend {
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.input-form fieldset > div {
+	padding: 0.5em;
+}
+
+.input-form fieldset label {
+	display: inline-block;
+	width: 150px;
+	cursor: pointer;
+}
+
+.input-form fieldset input[type=text] {
+	padding: 3px;
+}
+
+.input-form fieldset .buttons {
+	margin-top: 1em;
+}
