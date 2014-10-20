@@ -9,4 +9,15 @@ $productRepository = new ProductRepository($pdo);
 
 $products = $productRepository->findAll();
 
-include 'index.view.php';
+
+$viewRenderer = new ViewRenderer();
+$viewRenderer->setModel(
+	new ViewModel(
+		array(
+			'products' => $products,
+			'config'   => $config,
+		),
+		'default-layout'
+	)
+);
+echo $viewRenderer->render('index');
