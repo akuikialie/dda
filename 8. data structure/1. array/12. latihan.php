@@ -11,12 +11,6 @@ $data = array(
 
 function tampilkan($data)
 {
-   foreach($data as $v){
-    	for($i=0;$i<$v;$i++){
-            echo "*";
-	}
-	echo "<br>";
-   }
 }
 
 /*

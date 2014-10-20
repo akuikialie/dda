@@ -1,8 +1,6 @@
 <?php
 
-include '../src/product.php';
-include '../src/product-repository.php';
-include '../src/database-connection-manager.php';
+include '../loader.php';
 
 $dbManager = new DatabaseConnectionManager();
 $pdo = $dbManager->createConnection();
@@ -20,21 +18,7 @@ if (!empty($_POST)) {
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="../css/style.css" />
-	</head>
-	<body>
-		<div id="main-nav">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Handphone</a></li>
-				<li><a href="#">Komputer</a></li>
-				<li><a href="#">Aksesoris</a></li>
-			</ul>
-		</div>
+<?php include '../includes/header.php' ?>
 		<div class="container">
 			<h1><a href="index.php">Products</a> &gt; Tambah</h1>
 			<form class="input-form" method="post" action="">
@@ -54,5 +38,4 @@ if (!empty($_POST)) {
 				</fieldset>
 			</form>
 		</div>
-	</body>
-</html>
+<?php include '../includes/footer.php' ?>

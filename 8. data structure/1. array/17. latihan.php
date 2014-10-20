@@ -14,12 +14,6 @@ $data = array(
 // hitung rata-rata
 function get_average($array)
 {
-    $total = 0;
-    $pembagi = count($array);
-    foreach($array as $v) {
-	$total += $v;
-    }
-    return $total / $pembagi;
 }
 
 // 

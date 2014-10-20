@@ -15,6 +15,7 @@ class ProductRepository
 		
 		foreach ($this->db->query('SELECT * FROM products') as $row) {
 			$product = new Product();
+			$product->setId($row['id']);
 			$product->setTitle($row['name']);
 			$product->setPrice($row['price']);
 			
@@ -28,6 +29,7 @@ class ProductRepository
 	{
 		foreach ($this->db->query('SELECT * FROM products WHERE id = ' . (int)$id) as $row) {
 			$product = new Product();
+			$product->setId($row['id']);
 			$product->setTitle($row['name']);
 			$product->setPrice($row['price']);
 			
